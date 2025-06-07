@@ -2,20 +2,20 @@
     <footer class="site-footer">
         <div class="container">
             <div class="footer-section">
-                <h3>About Us</h3>
+                <h3>درباره ما</h3>
                 <p>{{ site.description }}</p>
             </div>
             <div class="footer-section">
-                <h3>Quick Links</h3>
+                <h3>لینک‌های سریع</h3>
                 <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/about">About</a></li>
-                    <li><a href="/blog">Blog</a></li>
-                    <li><a href="/contact">Contact</a></li>
+                    <li><a href="/">خانه</a></li>
+                    <li><a href="/about">درباره ما</a></li>
+                    <li><a href="/blog">وبلاگ</a></li>
+                    <li><a href="/contact">تماس با ما</a></li>
                 </ul>
             </div>
             <div class="footer-section">
-                <h3>Categories</h3>
+                <h3>دسته‌بندی‌ها</h3>
                 <ul>
                     {% for category in site.categories %}
                     <li><a href="/category/{{ category[0] | slugify }}">{{ category[0] }}</a></li>
@@ -23,15 +23,15 @@
                 </ul>
             </div>
             <div class="footer-section">
-                <h3>Subscribe</h3>
+                <h3>عضویت در خبرنامه</h3>
                 <form class="subscribe-form">
-                    <input type="email" placeholder="Your email" required>
-                    <button type="submit">Subscribe</button>
+                    <input type="email" placeholder="ایمیل شما" required>
+                    <button type="submit">عضویت</button>
                 </form>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; {{ site.time | date: '%Y' }} {{ site.title }}. All rights reserved.</p>
+            <p>تمامی حقوق محفوظ است &copy; {{ site.time | date: '%Y' }} {{ site.title }}.</p>
         </div>
     </footer>
     <script src="{{site.url}}/assets/js/script.js"></script>
