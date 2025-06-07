@@ -1,5 +1,6 @@
 title : سایت من 
 description : این سایت من در گیتهاب پیج هست 
-theme : minima 
+theme : minima
+url: https://4rb.ir
 
 plugins:
