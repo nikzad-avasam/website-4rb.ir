@@ -1,39 +1,26 @@
-    </main>
-    <footer class="site-footer">
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ site.title }} - {{ page.title }}</title>
+    <link rel="stylesheet" href="{{site.url}}/assets/css/style.css">
+</head>
+<body>
+    <header class="site-header">
         <div class="container">
-            <div class="footer-section">
-                <h3>درباره ما</h3>
-                <p>{{ site.description }}</p>
+            <div class="logo">
+                <a href="/">{{ site.title }}</a>
             </div>
-            <div class="footer-section">
-                <h3>لینک‌های سریع</h3>
-                <ul>
+            <nav class="navbar">
+                <button class="menu-toggle" aria-label="منو">☰</button>
+                <ul class="nav-menu">
                     <li><a href="/">خانه</a></li>
                     <li><a href="/about">درباره ما</a></li>
                     <li><a href="/blog">وبلاگ</a></li>
                     <li><a href="/contact">تماس با ما</a></li>
                 </ul>
-            </div>
-            <div class="footer-section">
-                <h3>دسته‌بندی‌ها</h3>
-                <ul>
-                    {% for category in site.categories %}
-                    <li><a href="/category/{{ category[0] | slugify }}">{{ category[0] }}</a></li>
-                    {% endfor %}
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h3>عضویت در خبرنامه</h3>
-                <form class="subscribe-form">
-                    <input type="email" placeholder="ایمیل شما" required>
-                    <button type="submit">عضویت</button>
-                </form>
-            </div>
+            </nav>
         </div>
-        <div class="footer-bottom">
-            <p>تمامی حقوق محفوظ است &copy; {{ site.time | date: '%Y' }} {{ site.title }}.</p>
-        </div>
-    </footer>
-    <script src="{{site.url}}/assets/js/script.js"></script>
-</body>
-</html>
+    </header>
+    <main class="container">
